@@ -1,0 +1,111 @@
+body {
+background: #040404; 
+margin: 0px;
+height: 100%;
+}
+
+#logoarea {
+background: #00476B;
+}
+
+#logoarea img {
+margin: 8px 8px;
+}
+
+#logoarea img:hover {
+opacity: 0.9;
+}
+
+#linkbar {
+background: #001a1f;
+font: 18px arial,sans-serif;
+color: white;
+border-top:1px solid #223C3F;
+}
+
+a {
+font: 16px arial,sans-serif;
+text-decoration: none;
+color: white;
+margin-left: 24px;
+margin-bottom: -12px;
+}
+
+a:hover {
+color: #388b9e;
+}
+
+#topics {
+background: #001a1f;
+height: 205px;
+padding: 5px;
+width: 910px;
+min-width: 910px;
+position: relative;
+left: 50%;
+margin-left: -460px;
+box-shadow: 5px 5px 3px #111;
+border-radius: 6px;
+}
+
+#topics p{
+font: bold 14px arial,sans-serif;
+color: white;
+}
+
+#topics img {
+opacity: 0.75;
+margin-bottom:8px;
+}
+#topics img:hover {
+opacity: 1.0;
+box-shadow: 0px 2px 2px #678;
+}
+
+#post {
+color: #FFFFFF;
+font: 14px arial,sans-serif;
+background: #373942;
+margin-top:24px;
+margin-left: 12%;
+margin-right: 24px;
+box-shadow: 5px 5px 3px #111;
+border-radius: 4px;
+width:76%;
+}
+
+#post p {
+}
+
+#title{
+color: #FFFFFF;
+font: 18px arial,sans-serif;
+background: #001A1F;
+padding:none;
+}
+
+#BL {
+height: 5px;
+background: #001A1F;
+}
+
+#date {
+display: inline;
+font: 15px arial,sans-serif;
+color: white;
+}
+
+#footer {
+z-index:-3;
+background-color:#19394C;
+color:FFFFFF;
+font-family:sans-serif;
+position: fixed;
+bottom: 0;
+height: 48px;
+width: 100%;
+}
+
+#footer p {
+text-align:center;
+}

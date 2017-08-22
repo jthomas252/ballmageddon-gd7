@@ -1,0 +1,39 @@
+			/* Part of attempted rendering optimizations */
+			var wDiff:int = camX - lastCamX;
+			var hDiff:int = camY - lastCamY;
+			
+			this.bitmapData.draw(this.bitmapData, new Matrix(1, 0, 0, 1, wDiff * -1, hDiff * -1));
+			
+			//Determine the difference rects
+			var rectArray:Array = new Array();
+			var r:Rectangle;
+			
+			if (redrawAll) {
+				r = new Rectangle(0, 0, width, height);
+				rectArray.push(r);
+			} else {
+				
+				if(wDiff > 0){
+					r = new Rectangle(width - wDiff, 0, wDiff, height);
+					rectArray.push(r);
+				} else {
+					r = new Rectangle(0, 0, wDiff * -1, height);
+					rectArray.push(r);
+				}
+				
+				if (hDiff > 0) {
+					r = new Rectangle(0, height - hDiff, width, hDiff);
+					rectArray.push(r);
+				} else {
+					r = new Rectangle(0, 0, width, hDiff * -1);
+					rectArray.push(r);
+				}
+				
+				r = new Rectangle(pBall.x - camX - 32, pBall.y - camY - 32, pBall.width * 1.03 + 64, pBall.height + 64);
+				rectArray.push(r);
+			}
+			
+			var checkBool:Boolean;
+			var u:int;
+			
+			

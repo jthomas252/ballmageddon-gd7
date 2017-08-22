@@ -1,0 +1,20 @@
+FINAL TASK LIST
+	
+Score Menu
+	Display local scores
+	Put in pre-fab socres
+	Possibly have a INITAL entry form
+	
+EXT --- 
+	
+Cutscenes
+	Draw up storyboard scene
+
+Character Select
+	Save stats in Top
+	Load graphic preview on NewGame
+	
+Game Start Text (LOW IMPORTANCE)
+	Display GET READY 
+	3,2,1 (Voice countdown?)
+	Draw a onscreen laser (animated) onto player ball?

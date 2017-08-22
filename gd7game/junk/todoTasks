@@ -1,0 +1,89 @@
+GameObject
+	Make class that has the x/y positions
+	store a live/dead state, can be started as dead
+	Store the 'tile' type
+	Option to get, set tile
+	Width, Height (32x32)
+	Collision test (getRect)
+	
+GameObject Display
+	Add into loop
+	Add to have a 'front' section
+	
+GameObject Collision
+	Affect speed of PlayerBall (x and y)
+	Change to a 'dead' state
+	
+GameObject Editing
+	Add into the building check, if it finds an object select that instead (objects have priority)
+	ObjectSelected boolean, ObjectSelector data
+	Keyboard is move only
+	Z/X same thing, +- same thing
+	Change the visual preview to an object
+	
+GameObject File Saving
+	NumObjects as short
+	read x/y as short
+	tile as byte
+	live / dead status as byte (readBoolean())
+	
+	read in short
+	for loop for numObjects
+	read each short
+	read tile
+	read live/dead
+	
+Main Menu
+	New bitmap added into main
+	Recreated on Dispatch event (returnToMainMenu)
+	CopyPixels from Buttons or inserted bitmaps 
+	Logo, New Game, Sound On/Off Button, Scores
+	New Game transitions into game
+	ColorTransform out? 
+	
+Button
+	Existing code
+	Watch for events
+	Write to a bitmap on change
+	Draws itself in a minimalist style? 
+	Label
+	Don't care about disabled
+	
+In-game menu
+	Spawns on event in mainMenu
+	Watches for button events
+	Music On/Off, Sound On/Off
+	Exit | RETRY (Confirmation pop-up?)
+	Back To Game
+	
+Exiting
+	Remove event listeners
+	clear level data (ByteArray)
+	Clear BitmapData
+	Clear TilesetHandler (?)
+	
+Havoc
+	Stored in PlayerBall
+	Gains on damage
+	Possibly lowers over time
+	Can level up
+	Lost on hazard
+	Level stat stored
+	Character Bonuses stored (?)
+	Level multiplys speed/force
+	
+Havoc Bar
+	UI elements get stored as an array in the top of the class
+	Only updated as needed
+	Displays Level, Current Havoc (using Draw)
+	Use a mask, store elements in an embed? 
+	
+In-game Timer
+	Lasts 267 seconds (99 3-second ticks)
+	Dispatches "END_CONDITION" event
+	
+In-game Timer Display
+	Displays remaining seconds (ceiling divided by 3)
+	Raster TexT?
+
+	
